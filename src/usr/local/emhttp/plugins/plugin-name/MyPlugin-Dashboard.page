@@ -20,7 +20,7 @@ $mytiles["plugin-name"]["column1"] = <<<EOT
                 <!-- Primary control buttons -->
               </span>
               <span class='tile-header-right-controls'>
-                <a href="/Settings/Sample-Config" title="_(Settings)_"><i class="fa fa-fw fa-cog control"></i></a>
+                <a href="/Settings/MyPlugin-Config" title="_(Settings)_"><i class="fa fa-fw fa-cog control"></i></a>
               </span>
             </span>
           </span>
