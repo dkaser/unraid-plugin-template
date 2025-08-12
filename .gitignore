@@ -2,3 +2,4 @@
 ._.DS_Store
 .php-cs-fixer.cache
 vendor
+unraid-plugin-customizer
