@@ -1,0 +1,35 @@
+Cond="version_compare(parse_ini_file('/etc/unraid-version')['version'],'6.11.9','>')"
+Menu="Dashboard:0"
+---
+<?php
+$mytiles["plugin-name"]["column1"] = <<<EOT
+    <tbody title="My New Plugin">
+      <tr>
+        <td>
+          <span class='tile-header'>
+            <span class='tile-header-left'>
+              <i class='icon-performance f32'></i>
+              <div class='section'>
+                My New Plugin
+                <br>
+                <span>Subtitle</span>
+              </div>
+            </span>
+            <span class='tile-header-right'>
+              <span class='tile-ctrl'>
+                <!-- Primary control buttons -->
+              </span>
+              <span class='tile-header-right-controls'>
+                <a href="/Settings/Sample-Config" title="_(Settings)_"><i class="fa fa-fw fa-cog control"></i></a>
+              </span>
+            </span>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td><span class="w26">Parameter</span> Value </td>
+      </tr>
+    </tbody>
+
+    EOT;
+?>
