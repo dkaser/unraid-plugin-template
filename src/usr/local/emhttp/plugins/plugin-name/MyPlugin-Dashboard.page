@@ -15,7 +15,9 @@ $mytiles["plugin-name"]["column1"] = <<<EOT
             <span class='tile-header-left'>
               <i class='icon-performance f32'></i>
               <div class='section'>
-                {$cardTitleStart}My New Plugin{$cardTitleEnd}
+                {$cardTitleStart}
+                  My New Plugin
+                {$cardTitleEnd}
                 <span>Subtitle</span>
               </div>
             </span>
