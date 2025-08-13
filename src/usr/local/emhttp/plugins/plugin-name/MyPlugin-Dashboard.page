@@ -2,6 +2,11 @@ Cond="version_compare(parse_ini_file('/etc/unraid-version')['version'],'6.11.9',
 Menu="Dashboard:0"
 ---
 <?php
+
+$isResponsiveWebgui = version_compare(parse_ini_file('/etc/unraid-version')['version'] ?? "", '7.2', '>=');
+$cardTitleStart     = $isResponsiveWebgui ? "<h3 class='tile-header-main'>" : "";
+$cardTitleEnd       = $isResponsiveWebgui ? "</h3>" : "<br>";
+
 $mytiles["plugin-name"]["column1"] = <<<EOT
     <tbody title="My New Plugin">
       <tr>
@@ -10,8 +15,7 @@ $mytiles["plugin-name"]["column1"] = <<<EOT
             <span class='tile-header-left'>
               <i class='icon-performance f32'></i>
               <div class='section'>
-                My New Plugin
-                <br>
+                {$cardTitleStart}My New Plugin{$cardTitleEnd}
                 <span>Subtitle</span>
               </div>
             </span>
